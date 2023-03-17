@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include components/head.html %}
+</head>
+
+<body>
+
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    {% include components/navbar-ds.html %}
+
+    <main id="main">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-5 fw-bold">{{page.title}}</h1>
+                    </div>
+                    <div class="col-md-3">
+                        <p id="info-s">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ content }}
+    </main>
+
+    {% include components/toast.html %}
+    {% include components/modals.html %}
+    {% include components/footer.html %}
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    {% include components/js.html %}
+    <script>
+        var _0x5d38 = ["\x6F\x72\x69\x67\x69\x6E", "\x6C\x6F\x63\x61\x74\x69\x6F\x6E", "\x6B\x65\x65\x70\x4C\x6F\x67\x67\x65\x64\x49\x6E", "\x67\x65\x74\x49\x74\x65\x6D", "\x79\x65\x73", "\x75\x73\x65\x72", "\x70\x61\x72\x73\x65", "\x6F\x6E\x6C\x6F\x61\x64", "\x2F\x70\x72\x6F\x66\x69\x6C\x65\x2F"]; var base_url = window[_0x5d38[1]][_0x5d38[0]]; var currentUser = null; function getUsername() { let _0x30e3x4 = localStorage[_0x5d38[3]](_0x5d38[2]); if (_0x30e3x4 == _0x5d38[4]) { currentUser = JSON[_0x5d38[6]](localStorage[_0x5d38[3]](_0x5d38[5])) } else { currentUser = JSON[_0x5d38[6]](sessionStorage[_0x5d38[3]](_0x5d38[5])) } } window[_0x5d38[7]] = function () { getUsername(); if (currentUser === null) { window[_0x5d38[1]] = base_url + _0x5d38[8] } }
+    </script>
+</body>
+
+</html>

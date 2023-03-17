@@ -1,0 +1,53 @@
+<div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="loginmodalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control rounded-3" id="username-input" placeholder="username">
+                    <label for="username-input">Username</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-3" id="pass-input" placeholder="Password">
+                    <label for="pass-input">Password</label>
+                </div>
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me" id="ingat-saya"> Remember me
+                    </label>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" id="login-btn"><i
+                        class="bi bi-box-arrow-in-right"></i> Login</button>
+                <small class="text-muted">Klik Login, untuk mengakses fitur dashboard.</small>
+                <hr class="my-4">
+                <a href="{{site.baseurl}}/dashboard-demo" class="w-100 mb-2 btn btn-lg rounded-3 btn-outline-secondary"
+                    type="submit"><i class="bi bi-box-arrow-in-right"></i> Demo Dashboard</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var _0x858c = ["\x6F\x72\x69\x67\x69\x6E", "\x6C\x6F\x63\x61\x74\x69\x6F\x6E", "\x6B\x65\x65\x70\x4C\x6F\x67\x67\x65\x64\x49\x6E", "\x67\x65\x74\x49\x74\x65\x6D", "\x79\x65\x73", "\x75\x73\x65\x72", "\x70\x61\x72\x73\x65", "\x6F\x6E\x6C\x6F\x61\x64", "\x74\x6D\x62\x6C\x2D\x6C\x6F\x67", "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64", "\x74\x6D\x62\x6C\x2D\x64\x61\x73\x68", "\x64\x69\x73\x70\x6C\x61\x79", "\x73\x74\x79\x6C\x65", "\x6E\x6F\x6E\x65", "\x62\x6C\x6F\x63\x6B"]; var base_url = window[_0x858c[1]][_0x858c[0]]; var currentUser = null; function getUsername() { let _0xa1f8x4 = localStorage[_0x858c[3]](_0x858c[2]); if (_0xa1f8x4 == _0x858c[4]) { currentUser = JSON[_0x858c[6]](localStorage[_0x858c[3]](_0x858c[5])) } else { currentUser = JSON[_0x858c[6]](sessionStorage[_0x858c[3]](_0x858c[5])) } } window[_0x858c[7]] = function () { getUsername(); var _0xa1f8x5 = document[_0x858c[9]](_0x858c[8]); var _0xa1f8x6 = document[_0x858c[9]](_0x858c[10]); if (currentUser !== null) { _0xa1f8x5[_0x858c[12]][_0x858c[11]] = _0x858c[13]; _0xa1f8x6[_0x858c[12]][_0x858c[11]] = _0x858c[14] } else { _0xa1f8x6[_0x858c[12]][_0x858c[11]] = _0x858c[13] } }
+
+</script>
+<!-- about me full  -->
+<div class="modal fade" id="aboutmefull" tabindex="-1" aria-labelledby="aboutmefullLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="aboutmefullLabel">Tentang Saya</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p align="justify">
+                    {{site.aboutme}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

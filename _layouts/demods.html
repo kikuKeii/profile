@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include components/head.html %}
+</head>
+
+<body>
+
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <header id="header" class="d-flex flex-column justify-content-center">
+
+        <nav id="navbar" class="navbar nav-menu">
+            <ul>
+                <li><a href="{{site.baseurl}}/dashboard-demo" class="nav-link scrollto"><i class='bx bx-home'></i>
+                        <span>Dashboard</span></a></li>
+                <li><a href="{{site.baseurl}}/dashboard-demo/pesan" class="nav-link scrollto"><i
+                            class='bx bx-message-dots'></i>
+                        <span>Pesan</span></a></li>
+                <li><a href="{{site.baseurl}}/" class="nav-link scrollto"><i class='bx bx-log-in-circle'></i>
+                        <span>Logout</span></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="main">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-5 fw-bold">{{page.title}}</h1>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Welcome User Fullname<br>
+                            <i class="bx bx-user"></i> : username<br>
+                            <i class="bx bx-envelope"></i> : email<br>
+                            <i class="bx bx-log-in-circle"></i> : level login admin
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ content }}
+    </main>
+
+    {% include components/toast.html %}
+    {% include components/modals.html %}
+    {% include components/footer.html %}
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    {% include components/js.html %}
+
+</body>
+
+</html>

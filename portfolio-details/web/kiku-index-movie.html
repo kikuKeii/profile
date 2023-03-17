@@ -1,0 +1,43 @@
+---
+layout: portfolio-details
+title: Kiku Index Movie
+katagori : Web, React JS, API
+client : null
+date : 11 November, 2022
+purl : https://kiku-index-movie.vercel.app/
+desc : "Aplikasi web untuk menelusuri semua film populer. Dibangun dengan React JS dan API publik The Movie Database."
+---
+
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide">
+                            <img src="{{site.baseurl}}/assets/img/portfolio/W_2_index-movie.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-info">
+                    <h3>Project information</h3>
+                    <ul>
+                        <li><strong>Category</strong>: {{page.katagori}}</li>
+                        <li><strong>Client</strong>: {{page.client}}</li>
+                        <li><strong>Project date</strong>: {{page.date}}</li>
+                        <li><strong>Project URL</strong>: <a href="{{page.purl}}">{{page.purl}}</a></li>
+                    </ul>
+                </div>
+                <div class="portfolio-description">
+                    <h2>{{page.title}}</h2>
+                    <p>
+                        {{page.desc}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

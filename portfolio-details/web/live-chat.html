@@ -1,0 +1,47 @@
+---
+layout: portfolio-details
+title: Livechat
+katagori : Web, Exemple
+client : Dwi
+lclient : null
+date : 3 Maret, 2023
+purl : https://github.com/kikuKeii/live-chat-sistem-sederhana
+desc : "Livechat sistem sedehana dibangun dengan nodejs dan dibuat untuk membantu pengemabngan sistem yang akan datang.
+Package yang digunakan skoet JS."
+---
+
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide">
+                            <img src="{{site.baseurl}}/assets/img/portfolio/W_2_index-movie.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="portfolio-info">
+                    <h3>Project information</h3>
+                    <ul>
+                        <li><strong>Category</strong>: {{page.katagori}}</li>
+                        <li><strong>Client</strong>: <a href="{{page.lclient}}">{{page.client}}</a></li>
+                        <li><strong>Project date</strong>: {{page.date}}</li>
+                        <li><strong>Project URL</strong>: <a href="{{page.purl}}">{{page.purl}}</a></li>
+                        <li><strong>Demo URL</strong>: <a href="https://chat-sistem-sederhana.kikukeii.repl.co/"
+                                target="_blank">livechat</a></li>
+                    </ul>
+                </div>
+                <div class="portfolio-description">
+                    <h2>{{page.title}}</h2>
+                    <p>
+                        {{page.desc}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

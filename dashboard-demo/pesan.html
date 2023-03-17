@@ -1,0 +1,78 @@
+---
+layout: demods
+title: Demo Dashboard Pesan
+---
+
+<div class="pe-5 ps-5">
+    <div class="list-group">
+        <!-- List Message -->
+        <selection class="list-group-item list-group-item-action" aria-current="true" key="bu92o" data-bs-toggle="modal"
+            data-bs-target="#modal_bu92o">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">From : <strong>Kiki</strong></h5>
+                <small>23:26 17-2-2023</small>
+            </div>
+            <p class="mb-1"> Email : miftakhuddinfalaki@gmail.com</p>
+            <small>Subject : Init</small>
+        </selection>
+        <selection class="list-group-item list-group-item-action" aria-current="true" key="loylk" data-bs-toggle="modal"
+            data-bs-target="#modal_loylk">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">From : <strong>Kiki</strong></h5>
+                <small>23:26 17-2-2023</small>
+            </div>
+            <p class="mb-1"> Email : miftakhuddinfalaki@gmail.com</p>
+            <small>Subject : Init</small>
+        </selection>
+    </div>
+</div>
+<br>
+<h5 class="text-center">coba kirim pesan <a href="{{site.baseurl}}/#contact">disini</a>.</h5>
+
+<div>
+    <!-- List -->
+    <div class="modal fade" tabindex="-1" aria-hidden="true" id="modal_bu92o">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="name">Kiki</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Date : <i id="date">Sun Dec 18 2022 05:55:13 GMT+0700 (Western Indonesia Time)</i><br>
+                    Subject : <i id="subject">Init</i><br>
+                    Email : <i id="email">miftakhuddinfalaki@gmail.com</i><br>
+                    <br>
+                    Message : <br>
+                    <p id="message">Ini pesan pertama.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="mailto:miftakhuddinfalaki@gmail.com" class="btn btn-primary">Balas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" aria-hidden="true" id="modal_loylk">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="name">Kiki</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Date : <i id="date">Tue Dec 20 2022 21:26:43 GMT+0700 (Western Indonesia Time)</i><br>
+                    Subject : <i id="subject">Init</i><br>
+                    Email : <i id="email">miftakhuddinfalaki@gmail.com</i><br>
+                    <br>
+                    Message : <br>
+                    <p id="message">Test 123</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="mailto:miftakhuddinfalaki@gmail.com" class="btn btn-primary">Balas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

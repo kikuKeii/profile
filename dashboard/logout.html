@@ -1,0 +1,9 @@
+<script>
+    window.onload = function () {
+        var base_url = window.location.origin;
+        sessionStorage.removeItem('user');
+        localStorage.removeItem('user');
+        localStorage.removeItem('keepLoggedIn');
+        window.location = base_url + "/profile/";
+    }
+</script>
