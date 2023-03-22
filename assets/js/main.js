@@ -329,5 +329,3 @@ function cv404() {
   const showPesan2 = new bootstrap.Toast(getPesan2)
   showPesan2.show()
 }
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
