@@ -1,11 +1,14 @@
 ---
 layout: portfolio-details
-title: Kiku Index Movie
-katagori : Web, React JS, API
+title: IPSaya
+katagori : Web, Next.js
 client : null
-date : 11 November, 2022
-purl : https://kiku-index-movie.vercel.app/
-desc : "Aplikasi web untuk menelusuri semua film populer. Dibangun dengan React JS dan API publik The Movie Database."
+lclient : null
+date : 26 Maret, 2023
+purl : https://ipsaya.vercel.app/
+desc : "Tools untuk mencek IP Address utama dan informasi jaringan yang digunkaan. Serta dapa mengambil menampilkan
+infomrasi perangkat atau peramban dan dapat menampilkan geolocation atau lokasi geografi dari IP Address utama yang kita
+gunakan. Dan menggunakan Next.js"
 ---
 
 <section id="portfolio-details" class="portfolio-details">
@@ -15,7 +18,10 @@ desc : "Aplikasi web untuk menelusuri semua film populer. Dibangun dengan React 
                 <div class="portfolio-details-slider swiper">
                     <div class="swiper-wrapper align-items-center">
                         <div class="swiper-slide">
-                            <img src="{{site.baseurl}}/assets/img/portfolio/W_2_index-movie.png" alt="">
+                            <img src="{{site.baseurl}}/assets/img/portfolio/ipsaya-desktop.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{site.baseurl}}/assets/img/portfolio/ipsaya-mobile.png" width="250" alt="">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -26,7 +32,7 @@ desc : "Aplikasi web untuk menelusuri semua film populer. Dibangun dengan React 
                     <h3>Project information</h3>
                     <ul>
                         <li><strong>Category</strong>: {{page.katagori}}</li>
-                        <li><strong>Client</strong>: {{page.client}}</li>
+                        <li><strong>Client</strong>: <a href="{{page.lclient}}">{{page.client}}</a></li>
                         <li><strong>Project date</strong>: {{page.date}}</li>
                         <li><strong>Project URL</strong>: <a href="{{page.purl}}" target="_blank">{{page.purl}}</a></li>
                     </ul>
