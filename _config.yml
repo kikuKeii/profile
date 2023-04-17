@@ -5,7 +5,7 @@ description: >-
   Web Resume.
 baseurl: "/profile" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-img_av: "/assets/img/profile-img3.jpg"
+img_av: "/assets/img/profile-img4.png"
 github_username: kikukeii
 env_c: qwertyuiop
 permalink: "/:title/"
